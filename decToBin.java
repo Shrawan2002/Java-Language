@@ -10,7 +10,7 @@ public class decToBin {
             decNum = decNum/2;
             pow++;
         }
-        System.out.println("binary of " + decNum + " = " + binNum);
+        System.out.println("binary of " + myNum  + " = " + binNum);
     }
     public static void main(String[] args) {
         decToBinary(7);
