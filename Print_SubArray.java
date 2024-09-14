@@ -9,7 +9,7 @@ public class Print_SubArray {
 
                 int end = j;
 
-                for(int k = start; k<=end; k++){
+                for(int k = start; k <= end; k++){
                     System.out.print(numbers[k] + " ");
                 }
                 sb++;
