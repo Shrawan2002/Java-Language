@@ -28,10 +28,10 @@ public class Print_spiral2DArray {
                 }
                 System.out.print(matrix[i][startCol] + " ");
             }
-            // startRow++;
-            // endRow--;
-            // startCol++;
-            // // endCol--;
+            startRow++;
+            endRow--;
+            startCol++;
+            endCol--;
         }
         System.out.println();
     }
