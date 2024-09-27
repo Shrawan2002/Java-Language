@@ -5,7 +5,7 @@ public class StringToUpperCase {
         char ch = Character.toUpperCase(str.charAt(0));
         sb.append(ch);
         for(int i = 1; i<str.length(); i++){
-            if (str.charAt(i) == ' ') {
+            if (str.charAt(i) == ' ' && i<str.length()-1) {
                 sb.append(str.charAt(i));
                 i++;
                 sb.append(Character.toUpperCase(str.charAt(i)));
@@ -14,10 +14,12 @@ public class StringToUpperCase {
                 sb.append(str.charAt(i));
             }
         }
+        System.out.println(sb.length());
         return sb.toString();
     }
     public static void main(String[] args) {
         String str = "hi, i am shrawan ";
+        System.out.println(str.length());
         System.out.println(toUpperCase(str));
     }
 }
