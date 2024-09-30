@@ -4,7 +4,8 @@ public class FindSecondLargestNumber {
 
     public static int secondLargestNum(int arr[]){
         int largest = Integer.MIN_VALUE;
-        int second = Integer.MIN_VA;
+        int second = -1;
+        ;
         for(int i=0; i<arr.length; i++){
             if (largest<arr[i]) {
                 largest = arr[i];
@@ -16,8 +17,8 @@ public class FindSecondLargestNumber {
                 
             }
         }
-        System.out.println("largest number :" + largest);
-        System.out.println("second largest number :" + second);
+        // System.out.println("largest number :" + largest);
+        // System.out.println("second largest number :" + second);
         return second;
     }
     public static int[] takeInput(){
